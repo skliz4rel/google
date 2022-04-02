@@ -27,13 +27,26 @@ public class MyArrays {
         
         List<Replacement> list = new ArrayList();
         
-        String originalStr = "I am in love with you am";
+        //String originalStr = "I am in love with you am";
+        
+         String originalStr = "abcfab";
         
         
         Replacement r = new Replacement();
-        r.start = 2;
-        r.before = "am";
-        r.after = "fell";
+        //r.start = 2;
+        //r.before = "am";
+        r.start=0;
+        r.before = "ab";
+        r.after = "yy";
+        list.add(r);
+        
+        
+        r = new Replacement();
+        //r.start = 2;
+        //r.before = "am";
+        r.start=4;
+        r.before = "ab";
+        r.after = "xx";
         list.add(r);
         
         try{
@@ -48,7 +61,7 @@ public class MyArrays {
     
     public static String replace(List<Replacement> replaces, String originalStr) throws IllegalArgumentException{
         
-        String newStr = "";
+        String newStr = originalStr;
             
         for(Replacement r : replaces){
             
@@ -56,7 +69,8 @@ public class MyArrays {
                 throw new IllegalArgumentException("word not found");
             }
             else{
-                newStr = doReplace(originalStr, r.before, r.after, r.start);
+                newStr = doReplace(newStr, r.before, r.after, r.start);
+                //originalStr = newStr;
             }
         }
         
