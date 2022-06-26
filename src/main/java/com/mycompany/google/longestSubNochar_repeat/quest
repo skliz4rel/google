@@ -15,3 +15,16 @@ Explanation: The answer is "wke", with the length of 3.
 Note that the answer must be a substring, "pwke" is a subsequence
 and not a substring.
 
+
+
+Algorithm:
+1. Accept the string.
+2. Create an HashSet to store substring characters
+3. create a variable longest int and initiatlize it to 0.
+4. create a single loop to iterate through the string accepted.
+5. while iterating check if the characters are present in the HashSet that you created.
+6. if yes get the size and compare if greater than longest. If greater replace longest with the new size.
+7. If NO, keep adding the characters into the HashSet.
+8. Terminate when you finished reading trough the entire String characters.
+9. return the longest int value.
+10 END.

@@ -29,14 +29,17 @@ public class SubstrNocharRepeat {
         System.out.println("test pwwkew ->  "+result);
     }
     
+    //Time Complexity O(N)
+    //Space Complexity O(N)
     public static int solve(String str){
-        int  longest = 0;
+        int  longest = 0; //O(1)
         
-        HashSet<Character> substring = new HashSet<>();
+        HashSet<Character> substring = new HashSet<>(); //O(N)
         
+        //o(n)
         for(int k=0; k< str.length(); k++){
             
-            if(substring.contains(str.charAt(k))){
+            if(substring.contains(str.charAt(k))){ // O(1)
               int current =  substring.size();
               
               if(current > longest){

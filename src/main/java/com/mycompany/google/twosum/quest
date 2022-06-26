@@ -6,3 +6,17 @@ Example:
 Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1]
+
+
+Algorithm
+1. Begin
+2. Create an array to have to int values spaces. Name it answer
+3. Sort the nums arrays that you are given.
+3. Loop through the numbers array.
+4. create a variable to store the second number.
+5. Substract the number you read while looping through the nums array.
+6. Do a Arrays.binarySearch to find the result of the substraction index position.
+7. If index position is greater than -1.
+8. add the index of the found number and the current position in the answer array, based on an ascending order.
+9. call the break statement to exit the array.
+10. End.
