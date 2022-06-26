@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.google;
+package com.mycompany.google.interview;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -16,48 +16,7 @@ import java.util.List;
  * @author skliz
  */
 public class MyArrays {
-    
-   static  class Replacement{
-        int start;
-        String before;
-        String after;
-    }
-    
-    public static void main(String[] args){
-        
-        List<Replacement> list = new ArrayList();
-        
-        //String originalStr = "I am in love with you am";
-        
-         String originalStr = "abcfab";
-        
-        
-        Replacement r = new Replacement();
-        //r.start = 2;
-        //r.before = "am";
-        r.start=0;
-        r.before = "ab";
-        r.after = "yy";
-        list.add(r);
-        
-        
-        r = new Replacement();
-        //r.start = 2;
-        //r.before = "am";
-        r.start=4;
-        r.before = "ab";
-        r.after = "xx";
-        list.add(r);
-        
-        try{
-        String newString = replace(list, originalStr);
-        
-        System.out.println(newString);
-        }
-        catch(Exception e){
-            System.err.println("There was an error  "+e.getMessage() +" "+e.getCause());
-        }
-    }
+
     
     public static String replace(List<Replacement> replaces, String originalStr) throws IllegalArgumentException{
         
