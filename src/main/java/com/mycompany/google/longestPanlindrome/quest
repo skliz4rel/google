@@ -1,0 +1,25 @@
+Given a string s, find the longest palindromic substring in s. You may assume
+that the maximum length of s is 1000.
+Example 1:
+Input: "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+Example 2:
+Input: "cbbd"
+Output: "bb"
+
+
+Algorithm
+1 Begin
+2. Accept the string
+3. Create a int variable longestLen
+4. Create a unigue loop that reads from front to end   and Back to Front.
+5. While you iterating. create 3 unique strong string.
+Substring1 :  Front to end
+Substring2 : End to Front.
+Substring3: Inbetween the two pointers used.
+6. Reverse all the the 3 strings and check if they are palindromes.
+7. Use your if statement to store the longest values of the palindromes.
+8. Terminate the loop when the startPointer and endPointer each get to the center.
+9. End.
+

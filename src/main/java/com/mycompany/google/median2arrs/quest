@@ -10,3 +10,16 @@ Example 2:
 nums1 = [1, 2]
 nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.
+
+
+Algorithm
+Begin
+1. create a variable to store nums1 array and nums2 array
+2. store size of nums1 and nums2
+3. Sums the two size store in total numbers.
+4. calculate if total is a old or even number.
+5. create a sigle while loop to find the center number.
+6. while in the loop if old. terminate at the center number
+7. inside the while loop extract the 2 center even and exit with a break statement.
+8. calculate the sum and divide by 2.
+END.

@@ -8,8 +8,10 @@ package com.mycompany.google;
 import com.mycompany.google.interview.Usebugger;
 import com.mycompany.google.interview.Replacement;
 import static com.mycompany.google.interview.MyArrays.replace;
+import com.mycompany.google.longestPanlindrome.LongestPanlindrome;
 import com.mycompany.google.longestSubNochar_repeat.SubstrNocharRepeat;
 import com.mycompany.google.median2arrs.Median2arr;
+import com.mycompany.google.medianNumbers.Solution;
 import com.mycompany.google.twosum.Twosumanswer;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +35,10 @@ public class Main {
             SubstrNocharRepeat.test();
             
             Median2arr.test();
+            
+            LongestPanlindrome.test();
+            
+            Solution.test();
     }
  
 
